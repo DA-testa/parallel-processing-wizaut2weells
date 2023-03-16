@@ -3,7 +3,7 @@ import heapq
 
 def parallel_processing(n, m, data):
     output = []
-    heap = [(0,i) fir i in range(n)]
+    heap = [(0,i) for i in range(n)]
     heapq.heapify(heap)
     for i,t in enumerate(data):
         start_time, thread_index = heapq.heappop(heap)
