@@ -23,6 +23,7 @@ def main():
     # m - job count
     n = 0
     m = 0
+    data = []
     n, m = map(int, input().split())
     data = list(map(int, input().split()))
 
@@ -32,6 +33,8 @@ def main():
     # TODO: create the function
     result = parallel_processing(n,m,data)
     
+    for i in range(m):
+        print(result[i],result[i])
     # TODO: print out the results, each pair in it's own line
 
 
